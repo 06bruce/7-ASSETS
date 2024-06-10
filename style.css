@@ -3,12 +3,12 @@ body{
   background-size: cover;
 }
 .nav{
-  height: 5.7rem;
+  height: 5.3rem;
   width: 100%;
   background-image: url(images.jpeg);
   background-size: cover;
   border-bottom: 4px solid yellowgreen;
-  border-radius: 6px;
+  border-radius: 3px;
   overflow: hidden;
 }
 .nav-logo{
@@ -22,7 +22,7 @@ body{
 .link{
   float: left;
   margin-left: 9%;
-  margin-top: -9px;
+  margin-top: 9px;
   width: 25px;
   color: whitesmoke ;
   border-color: antiquewhite; 
@@ -46,7 +46,7 @@ body{
 .nav-button{
   margin-left: 80%;
   cursor: pointer;
-  margin-top: -18px;
+  margin-top: 18px;
 }
 
 .logBtn1{
@@ -102,9 +102,10 @@ background-color: rgba(11, 99, 126, 0.8);
   width: 93%;
   padding: 20px 19px 10px 40px;
   border: 1px solid #022229;
-  border-radius: 5px;
+  border-radius: 9px;
   margin-bottom: 20px;
   font-size: 14px;
+  cursor:context-menu;
 }
 .input-box i {
   position: absolute;
@@ -116,26 +117,29 @@ background-color: rgba(11, 99, 126, 0.8);
   
 }
 .submit {
-  width: 25%;
-  padding: 10px;
-  background-color: #1e4405;
-  border: none;
-  border-radius: 9px;
-  color: white;
-  font-size: 23px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
+  background-color: #010a11; 
+  border: none; 
+  color: rgb(250, 243, 243); 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration:wavy none; 
+  display: inline-block; 
+  font-size: 26px;
   margin-top: -20px;
+  cursor: pointer; 
+  text-transform: uppercase;
+  border-radius: 9px; 
+  transition: background-color 0.3s; 
 }
 .submit:hover {
   background-color: #4596ec;
 }
+
 .two-col {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: -10px;
   font-size: 20px;
 }
 .two-col label {
