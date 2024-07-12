@@ -1,15 +1,18 @@
 body{
-  background-image: url(dodge\ 5.jpg);
+  background-image: url(il_570xN.5783040989_7ehl.webp);
   background-size: cover;
 }
 .nav{
-  height: 5.3rem;
+  height: 70px;
   width: 100%;
-  /* background-image: url(images.jpeg); */
+  background-image: url(images.jpeg);
   background-size: cover;
   border-bottom: 4px solid yellowgreen;
-  border-radius: 3px;
-  /* overflow: hidden; */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  overflow: hidden;
 }
 
 .nav-logo{
@@ -17,21 +20,25 @@ body{
   background-image: url(LOGO.png);
   background-size: cover;
   border-radius: 40px;
-  height: 40px;
-  width: 40px;
-
-  
-
+  position: relative;
+  top: 5px;
+  height: 30px;
+  width: 60px;
+  margin-left: 30px;
+  margin-top: 30px; 
 }
 
 #list_style{
   list-style: none;
+  display: flex;
+  /* margin-left: 20px; */
 }
 
 .link{
   float: left;
-  margin-left: 9%;
-  margin-top: -20px;
+  margin-left: 10%;
+  position: relative;
+  top: -12px;
   width: 25px;
   color: whitesmoke ;
   border-color: rgb(206, 143, 62); 
@@ -41,7 +48,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-
+  
   .nav-menu link a:hover{
     color: bisque;
     font-size: 30px;
@@ -56,6 +63,8 @@ body{
   margin-left: 84%;
   cursor: pointer;
   margin-top: -25px;
+  position: relative;
+  top: -40px;
 }
 
 .logBtn1{
@@ -64,35 +73,38 @@ body{
     font-size: 20px;
     font-family: monospace;
     border-radius: 20px ;
+    margin-top: -40%;
     cursor: pointer;
 }
 .logBtn2{
   padding: 7px;
-    border: none;
-    font-size: 20px;
-    font-family:monospace;
-    border-radius: 20px ;
+  margin-top: 10%;   
+  border: none;
+  font-size: 20px;
+  font-family:monospace;
+  border-radius: 20px ;
 }
 .nav-menu-Btn{
   margin-left: 95%;
-  margin-bottom: -10px;
+  margin-bottom: -16px;
 }
 
 /* /.........................................the end of menu and nav things............................................ */
 
 
 .form-box{
-background-color: rgba(11, 99, 126, 0.8); 
+background-color: rgba(10, 93, 121, 0.8); 
     padding: 40px;
-    border: 2px solid #76cfe6; 
+    border: 2px solid #0d2329; 
     border-radius: 5px;
     box-shadow: none; 
     margin-left: 2%;
-    /* margin-top: -0px; */
-    height: 31rem;
+    margin-top: -0px;
+    height: 34rem;
     width: 35rem;
     text-align: center; 
     margin-left: 25%;
+    opacity: 80%;
 }
 .form-box header {
   color: rgb(245, 240, 240);
@@ -116,6 +128,7 @@ background-color: rgba(11, 99, 126, 0.8);
   margin-bottom: 20px;
   font-size: 14px;
   cursor:context-menu;
+  
 }
 .input-box i {
   position: absolute;
@@ -126,21 +139,120 @@ background-color: rgba(11, 99, 126, 0.8);
   font-size: 26px;
   
 }
-.submit {
-  background-color: #010a11; 
-  border: none; 
-  color: rgb(250, 243, 243); 
-  padding: 15px 32px; 
-  text-align: center; 
-  text-decoration:wavy none; 
-  display: inline-block; 
-  font-size: 26px;
-  margin-top: -20px;
-  cursor: pointer; 
+
+/*  -------------------------------the button of registering----------------------------- */
+
+
+
+.fancy {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 0.12px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+  /* margin-top: -6px; */
+ }
+ 
+ .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+ }
+ 
+ .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  border-radius: 9px; 
-  transition: background-color 0.3s; 
-}
+  text-decoration: none;
+  color: black;
+ }
+ 
+ .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy:hover {
+  color: white;
+  background: black;
+ }
+ 
+ .fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+ }
+ 
+ .fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+ }
+ 
+ .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+ }
+ 
+ .fancy:hover .bottom-key-1,
+  .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+ }
+
+
+
+
 .submit:hover {
   background-color: #4596ec;
 }
@@ -149,7 +261,7 @@ background-color: rgba(11, 99, 126, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -10px;
+  margin-top: 10px;
   font-size: 20px;
 }
 .two-col label {
@@ -171,3 +283,11 @@ background-color: rgba(11, 99, 126, 0.8);
   font-size: 17px;
 }
 
+/* ............................................footer site................................................................. */
+
+
+.footer1{
+  height: 50px;
+  height: 100%;
+  background-color: #0d2329;
+}

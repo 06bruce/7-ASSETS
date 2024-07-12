@@ -1,23 +1,24 @@
 body {
-    background-image: url(dodge\ 6.jpg);
+    background-image: url(person3.jpg);
     background-size: cover;
+    filter: brightness(2);
     
 }
 
 .nav {
     height: 5.3rem;
     width: 100%;
-    background-image: url(images.jpeg);
+    /* background-image: url(images.jpeg); */
     background-size: cover;
     border-bottom: 4px solid yellowgreen;
     border-radius: 3px;
     overflow: hidden;
 }
 
-.nav-logo {
-    margin-left: 10px;
+.nav_logo {
+    
 }
-
+    
 #list_style {
     list-style: none;
 }
@@ -49,7 +50,7 @@ body {
 }
 
 .nav-button {
-    margin-left: 80%;
+    margin-left: 70%;
     cursor: pointer;
     margin-top: 18px;
 }
@@ -68,6 +69,8 @@ body {
     font-size: 20px;
     font-family: monospace;
     border-radius: 20px;
+    margin-left: 20px;
+    margin-top: -55px;
 }
 
 .nav-menu-Btn {
@@ -79,7 +82,7 @@ body {
 
 
 .form-box {
-    background-color: rgba(11, 99, 126, 0.8);
+    background-color: rgba(5, 56, 71, 0.8);
     padding: 40px;
     border: 2px solid #76cfe6;
     border-radius: 5px;
@@ -116,6 +119,7 @@ body {
     margin-bottom: 20px;
     font-size: 14px;
     cursor: context-menu;
+    filter: brightness(0.4);
 }
 
 .input-box i {
@@ -128,21 +132,47 @@ body {
 
 }
 
-.submit {
-    background-color: #010a11;
-    border: none;
-    color: rgb(250, 243, 243);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: wavy none;
-    display: inline-block;
-    font-size: 26px;
-    margin-top: -20px;
+
+button {
+    display: flex;
+    width: 160px;
+    align-items: center;
+    font-family: inherit;
     cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 9px;
-    transition: background-color 0.3s;
-}
+    font-weight: 500;
+    font-size: 25px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin-left: 40%;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+  
+
+
+
+
 
 .submit:hover {
     background-color: #4596ec;
